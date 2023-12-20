@@ -1,5 +1,6 @@
 ---
 - name: Install nginx and configure it
+  hosts:web
   become: true
   tasks:
     - dnf:
