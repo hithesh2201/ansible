@@ -1,15 +1,17 @@
-- name: Install nginx and configure it
-  hosts: shell
+---
+- name: Install nginx and MySQL
+  hosts: web
   become: yes
   tasks:
-    - name: Install nginx
+    - name: Install nginx and MySQL
       yum:
-        name: nginx
-        yum: nginx,mysql
+        name:
+          - nginx
+          - mysql
         state: present
+
     - name: Start Nginx service
       service:
         name: nginx
         state: started
-
-      
+      become: true
