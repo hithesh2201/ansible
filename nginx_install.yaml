@@ -1,6 +1,6 @@
 ---
 - name: Install nginx and MySQL
-  hosts: web
+  hosts: shell
   become: yes
   tasks:
     - name: Install nginx and MySQL
