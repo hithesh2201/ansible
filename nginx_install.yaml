@@ -5,11 +5,11 @@
     - name: Install nginx
       yum:
         name: nginx
+        yum: nginx,mysql
         state: present
-      become: true
     - name: Start Nginx service
       service:
         name: nginx
-        state: stopped
-      become: true
+        state: started
+
       
