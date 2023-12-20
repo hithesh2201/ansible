@@ -1,0 +1,11 @@
+---
+- name: Install nginx and configure it
+  become: true
+  tasks:
+    - dnf:
+        name: nginx
+        state: present
+      become: true
+
+
+  
