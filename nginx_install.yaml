@@ -6,10 +6,8 @@
       yum:
         name: nginx
         state: present
-      become: true
     - name: Start Nginx service
       service:
         name: nginx
-        state: started
-      become: true
+        state: stopped
       
