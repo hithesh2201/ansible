@@ -7,5 +7,5 @@
     dnf:
       name: nginx
       state: present
-    when: demo == true 
+    when: demo == "true" 
 
