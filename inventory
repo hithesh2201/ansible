@@ -3,5 +3,5 @@
 [shell]
 54.237.183.108
 [localhost:vars]
-Name: Hitesh from inventory
-Age:23 from inventory
+    Name: Hitesh from inventory
+    Age:23 from inventory
