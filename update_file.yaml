@@ -5,5 +5,5 @@
   - name: creating a file and adding a content into it
     replace:
       path: /home/centos/ansible/hello.txt
-      regex: 'Hello'
+      regexp: 'Hello'
       replace: 'Hi'
