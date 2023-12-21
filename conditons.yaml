@@ -1,5 +1,6 @@
 - name: install nginx with condition
   hosts: localhost
+  become: yes
   vars:
     demo: true
   tasks:
