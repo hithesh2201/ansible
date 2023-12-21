@@ -9,7 +9,7 @@
   tasks:
   - name: install nginx if demo=true
     dnf:
-      name: {{item}}
+      name: "{{ item }}"
       state: present
-    loops:
+    loop:
       - software
