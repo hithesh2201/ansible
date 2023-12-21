@@ -2,8 +2,3 @@
 54.92.198.199
 [shell]
 54.237.183.108
-[localhost]
-54.196.85.63
-[localhost:vars]
-Name=Hitesh from inventory
-Age=23 from inventory
