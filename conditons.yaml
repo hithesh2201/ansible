@@ -1,11 +1,11 @@
 - name: install nginx with condition
   hosts: localhost
   vars:
-    demo: false
+    demo: true
   tasks:
   - name: install nginx if demo=true
     dnf:
       name: nginx
       state: present
-    when: demo == "true" 
+    when: demo == true 
 
