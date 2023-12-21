@@ -6,4 +6,5 @@
   tasks:
     - name: Add a new user
       ansible.builtin.user:
-        name: hitesh
+        name: suresh
+        
