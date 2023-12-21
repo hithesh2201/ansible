@@ -1,0 +1,16 @@
+- name: install nginx with condition
+  hosts: localhost
+  become: yes
+  vars:
+    software:
+      - git
+      - mysql
+      - postfix
+  tasks:
+  - name: install nginx if demo=true
+    dnf:
+      name: "{{ item.name }}"
+      state: "{{ item.present }}"
+    loop: 
+    - { name: git , state: present}
+    - { name: postfix , state: absent}
