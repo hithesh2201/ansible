@@ -1,11 +1,6 @@
 - name: install nginx with condition
   hosts: localhost
   become: yes
-  vars:
-    software:
-      - git
-      - mysql
-      - postfix
   tasks:
   - name: install nginx if demo=true
     dnf:
