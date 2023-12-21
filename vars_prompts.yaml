@@ -2,11 +2,11 @@
   hosts: localhost
   vars_prompt:
     -name: enter name
-     prompt: "please enter username"
-     private: no
+    prompt: "please enter username"
+    private: no
     -name: enter age
-     prompt: "please enter age"
-     private: no
+    prompt: "please enter age"
+    private: no
     
      
   tasks:
