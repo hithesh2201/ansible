@@ -4,6 +4,7 @@
   tasks:
   - name: creating a file and adding a content into it
     copy:
-      content: |
+      content:
         Hello World
+        Hi Hitesh
       dest: /home/centos/ansible/hello.txt
