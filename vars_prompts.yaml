@@ -1,10 +1,10 @@
 - name: demo for variables
   hosts: localhost
   vars_prompt:
-  - name: enter name
+  - name: Name
     prompt: "please enter username"
     private: no
-  - name: enter age
+  - name: Age
     prompt: "please enter age"
     private: no
     
