@@ -1,0 +1,8 @@
+- name: create a file and add a content
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: creating a file and adding a content into it
+    copy: |
+    Hello World
+    path: /home/centos/ansible/hello.txt
