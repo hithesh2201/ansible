@@ -3,6 +3,7 @@
   become: yes
   tasks:
   - name: creating a file and adding a content into it
-    copy: |
-    Hello World
-    path: /home/centos/ansible
+    copy:
+      content: |
+        Hello World
+      dest: /home/centos/ansible/hello.txt
