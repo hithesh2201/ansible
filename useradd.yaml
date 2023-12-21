@@ -1,0 +1,9 @@
+---
+- name: Create a new user
+  hosts: localhost
+  become: yes  # This allows the playbook to run with elevated privileges (sudo)
+
+  tasks:
+    - name: Add a new user
+      user:
+        name: hitesh
