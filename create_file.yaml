@@ -5,4 +5,4 @@
   - name: creating a file and adding a content into it
     copy: |
     Hello World
-    path: /home/centos/ansible/hello.txt
+    path: /home/centos/ansible
