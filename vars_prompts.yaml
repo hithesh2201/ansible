@@ -1,0 +1,15 @@
+- name: demo for variables
+  hosts: localhost
+  vars_prompt:
+    -name: enter name
+     prompt: please enter username
+     private: no
+    -name: enter age
+     prompt: please enter age
+     private: no
+    
+     
+  tasks:
+  - name: printing message
+    ansible.builtin.debug:
+      msg="Hi {{Name}} ,Age :{{Age}}"
