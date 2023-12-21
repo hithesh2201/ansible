@@ -2,8 +2,8 @@
   hosts: localhost
   tasks:
   - name: printing message
-    ansible.builtin.debug:
     vars:
       Name: Bhavana
       Age: 22
+    ansible.builtin.debug:
       msg="Hi {{ Name }} ,Age :{{ Age }}"
