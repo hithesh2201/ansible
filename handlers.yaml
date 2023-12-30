@@ -8,7 +8,7 @@
   tasks:
     - name: Ensure apache is at the latest version
       ansible.builtin.yum:
-        name: httpd
+        name: nginx
         state: latest
       notify:
         - Restart apache
