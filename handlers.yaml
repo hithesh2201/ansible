@@ -4,7 +4,7 @@
   vars:
     http_port: 80
     max_clients: 200
-  remote_user: root
+  become: yes
   tasks:
     - name: Ensure apache is at the latest version
       ansible.builtin.yum:
