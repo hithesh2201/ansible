@@ -9,7 +9,7 @@
           - nginx
           - mysql
         state: present
-      tags: install
+      tags: install   #ansible-playbook nginx_install.yaml --tags "install", ansible-playbook nginx_install.yaml --tags=install
 
     - name: Start Nginx service
       service:
