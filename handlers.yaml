@@ -8,7 +8,7 @@
   tasks:
     - name: Ensure apache is at the latest version
       ansible.builtin.yum:
-        name: git
+        name: postfix
         state: latest
       notify:
         - Restart apache
@@ -16,6 +16,5 @@
 
   handlers:
     - name: Restart apache
-      ansible.builtin.service:
-        name: httpd
-        state: restarted
+      ansible.builtin.debug:
+        msg: "Installed successfully"
