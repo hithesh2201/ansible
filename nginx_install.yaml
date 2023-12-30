@@ -9,7 +9,8 @@
           - nginx
           - mysql
         state: present
-    - tags: install
+      tags: 
+        - install
 
     - name: Start Nginx service
       service:
